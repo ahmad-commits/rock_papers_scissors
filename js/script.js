@@ -12,3 +12,29 @@ function getComputerChoice() {
     };
     return computerSelection;
 }
+
+function RockPaperScissors(playerSelection, computerSelection) {
+    console.log(`Player: ${playerSelection}`);
+    console.log(`Computer: ${computerSelection}`);    
+    if (playerSelection === computerSelection) {
+        console.log('Its a draw!');
+    } else if (playerSelection == 'Scissors' && computerSelection == 'Paper') {
+        console.log('Scissors beats Paper');
+        console.log('Player wins!');
+    } else if (playerSelection == 'Paper' && computerSelection == 'Scissors') {
+        console.log('Scissors beats Paper');
+        console.log('Computer wins!');
+    } else if (playerSelection == 'Paper' && computerSelection == 'Rock') {
+        console.log('Paper beats Rock');
+        console.log('Player wins!');
+    } else if (playerSelection == 'Rock' && computerSelection == 'Paper') {
+        console.log('Paper beats Rock');
+        console.log('Computer wins!');
+    } else if (playerSelection == 'Rock' && computerSelection == 'Scissors') {
+        console.log('Rock beats Scissors');
+        console.log('Player wins!');
+    } else if (playerSelection == 'Scissors' && computerSelection == 'Rock') {
+        console.log('Rock beats Scissors');
+        console.log('Computer wins!');
+    }
+}
